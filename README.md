@@ -24,7 +24,7 @@ python train.py \
   --summaries_dir=logs/training_summaries/basic \
   --output_graph=logs/trained_graph.pb \
   --output_labels=logs/trained_labels.txt \
-  --image_dir=./train
+  --image_dir=./data/train
 ```
 - to train the dataset
 
