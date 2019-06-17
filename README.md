@@ -44,3 +44,7 @@ python train.py \
 python classify.py path/to/image 
 ```
 - to test single image 
+
+#### Test acc:
+**59.64**
+
