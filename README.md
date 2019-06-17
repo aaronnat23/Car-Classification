@@ -19,7 +19,7 @@ $ wget --no-check-certificate https://ai.stanford.edu/~jkrause/cars/car_devkit.t
 ```
 
 # Pre-Processing Image
--add training, test and devkit files to this folder
+-add cars_train, cars_test and car_devkit files to this folder
 
 ```bash
  python pre-process.py 
