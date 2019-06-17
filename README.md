@@ -1,6 +1,3 @@
-# Car-Classification
-classifying cars
-
 ## Dependencies
 
 - [NumPy](http://docs.scipy.org/doc/numpy-1.10.1/user/install.html)
@@ -9,7 +6,21 @@ classifying cars
 - [OpenCV](https://opencv-python-tutroals.readthedocs.io/en/latest/)
 - [Scipy](https://www.scipy.org/)
 
+## Dataset
+We use the Cars Dataset, which contains 16,185 images of 196 classes of cars. The data is split into 8,144 training images and 8,041 testing images, where each class has been split roughly in a 50-50 split.
+
+You can get it from [Cars Dataset](https://ai.stanford.edu/~jkrause/cars/car_dataset.html):
+
+```bash
+$ cd Car-Recognition
+$ wget http://imagenet.stanford.edu/internal/car196/cars_train.tgz
+$ wget http://imagenet.stanford.edu/internal/car196/cars_test.tgz
+$ wget --no-check-certificate https://ai.stanford.edu/~jkrause/cars/car_devkit.tgz
+```
+
 # Pre-Processing Image
+-add training, test and devkit files to this folder
+
 ```bash
  python pre-process.py 
 ```
