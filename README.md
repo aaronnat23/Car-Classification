@@ -7,7 +7,7 @@ classifying cars
 - [Tensorflow](https://www.tensorflow.org/versions/r0.8/get_started/os_setup.html)
 - [Keras](https://keras.io/#installation)
 - [OpenCV](https://opencv-python-tutroals.readthedocs.io/en/latest/)
-- [Scipy]
+- [Scipy](https://www.scipy.org/)
 
 # Pre-Processing Image
 ```bash
