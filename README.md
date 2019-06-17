@@ -40,6 +40,8 @@ python train.py \
 - to train the dataset
 
 # Test Dataset
+download trained model files here and save to logs folder
+https://drive.google.com/drive/folders/1UJFZ4DdFAVerVFvLWqbtFE7tMInd51Ir?usp=sharing
 ```bash
 python classify.py path/to/image 
 ```
