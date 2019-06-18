@@ -53,5 +53,5 @@ python classify.py path/to/image
 - to test single image 
 
 #### Test acc:
-**62.34**
+**62.34%**
 
