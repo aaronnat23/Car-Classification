@@ -29,7 +29,10 @@ $ wget --no-check-certificate https://ai.stanford.edu/~jkrause/cars/car_devkit.t
 ```bash
  python pre-process.py 
 ```
-- to split train dataset by train/valid/test
+- To split train dataset by train/valid/test
+- We augmented the color of each images to generate 2 more images. 
+- This is done to increase the number of train dataset for each class.
+- Each original image was converted to from RGB to BGR and BGR to HSV respectively.
 
 # Train Dataset
 ```bash
@@ -43,6 +46,7 @@ python train.py \
   --image_dir=./data/train
 ```
 - to train the dataset
+- images are augmented in different distortions like crops, scales, and flips.
 
 # Test Dataset
 download trained model files here and save to **logs** folder of the main directory
