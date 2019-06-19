@@ -58,4 +58,4 @@ python classify.py path/to/image
 
 #### Test acc:
 **62.34%**
-The more complex model (ex. InceptionV3) the less accurate results are. This is understanable due to bias/variance problem.
+- The more complex model (ex. InceptionV3) the less accurate results are. This is understanable due to bias/variance problem.
