@@ -46,6 +46,7 @@ python train.py \
   --image_dir=./data/train
 ```
 - to train the dataset
+- the inception model file will be dowloaded once the code runs
 - images are augmented in different distortions like crops, scales, and flips.
 
 # Test Dataset
