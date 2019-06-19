@@ -16,45 +16,56 @@ def ensure_folder(folder):
 
 
 def save_train_data(fnames, labels, bboxes):
-    src_folder = 'cars_train'
-    num_samples = len(fnames)
+	src_folder = 'cars_train'
+	num_samples = len(fnames)
 
-    train_split = 0.8
-    num_train = int(round(num_samples * train_split))
-    train_indexes = random.sample(range(num_samples), num_train)
+	train_split = 0.8
+	num_train = int(round(num_samples * train_split))
+	train_indexes = random.sample(range(num_samples), num_train)
 
-    pb = ProgressBar(total=100, prefix='Save train data', suffix='', decimals=3, length=50, fill='=')
+	pb = ProgressBar(total=100, prefix='Save train data', suffix='', decimals=3, length=50, fill='=')
 
-    for i in range(num_samples):
-        fname = fnames[i]
-        label = labels[i]
-        (x1, y1, x2, y2) = bboxes[i]
+	for i in range(num_samples):
+		fname = fnames[i]
+		label = labels[i]
+		(x1, y1, x2, y2) = bboxes[i]
 
-        src_path = os.path.join(src_folder, fname)
-        src_image = cv.imread(src_path)
-        height, width = src_image.shape[:2]
-        # margins of 16 pixels
-        margin = 16
-        x1 = max(0, x1 - margin)
-        y1 = max(0, y1 - margin)
-        x2 = min(x2 + margin, width)
-        y2 = min(y2 + margin, height)
-        # print("{} -> {}".format(fname, label))
-        pb.print_progress_bar((i + 1) * 100 / num_samples)
+		src_path = os.path.join(src_folder, fname)
+		src_image = cv.imread(src_path)
+		height, width = src_image.shape[:2]
+		# margins of 16 pixels
+		margin = 16
+		x1 = max(0, x1 - margin)
+		y1 = max(0, y1 - margin)
+		x2 = min(x2 + margin, width)
+		y2 = min(y2 + margin, height)
+		# print("{} -> {}".format(fname, label))
+		pb.print_progress_bar((i + 1) * 100 / num_samples)
 
-        if i in train_indexes:
-            dst_folder = 'data/train'
-        else:
-            dst_folder = 'data/valid'
+		if i in train_indexes:
+			dst_folder = 'data/train'
+		else:
+			dst_folder = 'data/valid'
 
-        dst_path = os.path.join(dst_folder, label)
-        if not os.path.exists(dst_path):
-            os.makedirs(dst_path)
-        dst_path = os.path.join(dst_path, fname)
-
-        crop_image = src_image[y1:y2, x1:x2]
-        dst_img = cv.resize(src=crop_image, dsize=(img_height, img_width))
-        cv.imwrite(dst_path, dst_img)
+		dst_path = os.path.join(dst_folder, label)
+		if not os.path.exists(dst_path):
+			os.makedirs(dst_path)
+		dst_path = os.path.join(dst_path, fname)
+		#print("this : " + str(dst_path))
+		fname2 = str(dst_path).split(".")
+		fname11 = fname2[0] + "00.jpg"
+		fname22 = fname2[0] + "01.jpg"
+		
+		#fname2 = str(fname) + "00"
+		#dst_path2 = os.path.join(dst_path, fname2)
+		#print("this2 : " + str(fname2))
+		crop_image = src_image[y1:y2, x1:x2]
+		dst_img = cv.resize(src=crop_image, dsize=(img_height, img_width))
+		hsv_img1 = cv.cvtColor(dst_img,cv.COLOR_BGR2RGB)
+		hsv_img2 = cv.cvtColor(dst_img,cv.COLOR_RGB2HSV)
+		cv.imwrite(dst_path, dst_img)
+		cv.imwrite(fname11, hsv_img1)
+		cv.imwrite(fname22, hsv_img2)
 
 
 def save_test_data(fnames, bboxes):
@@ -161,15 +172,15 @@ if __name__ == '__main__':
 	cars_meta = scipy.io.loadmat('devkit/cars_meta')
 	class_names = cars_meta['class_names']  # shape=(1, 196)
 	class_names = np.transpose(class_names)
-	#print('class_names.shape: ' + str(class_names.shape))
-	#print('Sample class_name: [{}]'.format(class_names[195][0][0]))
+	print('class_names.shape: ' + str(class_names.shape))
+	print('Sample class_name: [{}]'.format(class_names[195][0][0]))
 
 	ensure_folder('data/train')
 	ensure_folder('data/valid')
 	ensure_folder('data/test')
 
 	process_train_data()
-	process_test_data()
+	#process_test_data()
 
 
 	# clean up
