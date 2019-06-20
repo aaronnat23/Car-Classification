@@ -60,3 +60,16 @@ python classify.py path/to/image
 #### Test acc:
 **62.34%**
 - The more complex model (ex. InceptionV3) the less accurate results are. This is understanable due to bias/variance problem.
+
+# Results
+![Alt text](data/00020.jpg?raw=true "Title")
+BMW X3 SUV 2012 (score = 0.60578)
+Bentley Continental Flying Spur Sedan 2007 (score = 0.02981)
+BMW X5 SUV 2007 (score = 0.02563)
+Mercedes-Benz E-Class Sedan 2012 (score = 0.02369)
+Audi V8 Sedan 1994 (score = 0.02163)
+BMW 3 Series Sedan 2012 (score = 0.01933)
+Audi S6 Sedan 2011 (score = 0.01916)
+BMW ActiveHybrid 5 Sedan 2012 (score = 0.01839)
+Audi 100 Wagon 1994 (score = 0.01519)
+BMW M5 Sedan 2010 (score = 0.01504)
