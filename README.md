@@ -62,6 +62,8 @@ python classify.py path/to/image
 - The more complex model (ex. InceptionV3) the less accurate results are. This is understanable due to bias/variance problem.
 
 # Results
+- Results of images from test dataset
+- The final results display confidence score for all cars from highest to lowest
 
 ![Screenshot](data/00020.jpg)
 <br />
