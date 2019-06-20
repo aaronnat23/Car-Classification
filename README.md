@@ -66,29 +66,70 @@ python classify.py path/to/image
 ![Screenshot](data/00020.jpg)
 <br />
 BMW X3 SUV 2012 (score = 0.60578)
-Bentley Continental Flying Spur Sedan 2007 (score = 0.02981)
-BMW X5 SUV 2007 (score = 0.02563)
-Mercedes-Benz E-Class Sedan 2012 (score = 0.02369)
-Audi V8 Sedan 1994 (score = 0.02163)
-BMW 3 Series Sedan 2012 (score = 0.01933)
-Audi S6 Sedan 2011 (score = 0.01916)
-BMW ActiveHybrid 5 Sedan 2012 (score = 0.01839)
-Audi 100 Wagon 1994 (score = 0.01519)
-BMW M5 Sedan 2010 (score = 0.01504)
-
-
-![Screenshot](data/00020.jpg)
 <br />
-Hyundai Veloster Hatchback 2012 (score = 0.17449)
-Tesla Model S Sedan 2012 (score = 0.13896)
-Eagle Talon Hatchback 1998 (score = 0.07237)
-Infiniti G Coupe IPL 2012 (score = 0.05229)
-Porsche Panamera Sedan 2012 (score = 0.03987)
-Jaguar XK XKR 2012 (score = 0.03444)
-Nissan Juke Hatchback 2012 (score = 0.03395)
-Mitsubishi Lancer Sedan 2012 (score = 0.03289)
-Aston Martin Virage Coupe 2012 (score = 0.02511)
-BMW 3 Series Sedan 2012 (score = 0.02106)
+Bentley Continental Flying Spur Sedan 2007 (score = 0.02981)
+<br />
+BMW X5 SUV 2007 (score = 0.02563)
+<br />
+Mercedes-Benz E-Class Sedan 2012 (score = 0.02369)
+<br />
+Audi V8 Sedan 1994 (score = 0.02163)
+<br />
+BMW 3 Series Sedan 2012 (score = 0.01933)
+<br />
+Audi S6 Sedan 2011 (score = 0.01916)
+<br />
+<br />
+![Screenshot](data/00294.jpg)
+<br />
+Audi TT Hatchback 2011 (score = 0.41686)
+<br />
+Audi R8 Coupe 2012 (score = 0.08508)
+<br />
+Audi TT RS Coupe 2012 (score = 0.08176)
+<br />
+Jaguar XK XKR 2012 (score = 0.07689)
+<br />
+Bentley Continental GT Coupe 2007 (score = 0.04783)
+<br />
+Porsche Panamera Sedan 2012 (score = 0.02808)
+<br />
+Bentley Continental Supersports Conv. Convertible 2012 (score = 0.01938)
+<br />
+<br />
+![Screenshot](data/00285.jpg)
+<br />
+Lamborghini Reventon Coupe 2008 (score = 0.95508)
+<br />
+Fisker Karma Sedan 2012 (score = 0.01009)
+<br />
+Ford GT Coupe 2006 (score = 0.00693)
+<br />
+Lamborghini Aventador Coupe 2012 (score = 0.00500)
+<br />
+Ferrari FF Coupe 2012 (score = 0.00405)
+<br />
+Bugatti Veyron 16.4 Coupe 2009 (score = 0.00378)
+<br />
+Chevrolet Corvette ZR1 2012 (score = 0.00233)
+<br />
+<br />
+![Screenshot](data/00409.jpg)
+<br />
+Porsche Panamera Sedan 2012 (score = 0.21820)
+<br />
+Ford GT Coupe 2006 (score = 0.16311)
+<br />
+Jaguar XK XKR 2012 (score = 0.09361)
+<br />
+Hyundai Veloster Hatchback 2012 (score = 0.05442)
+<br />
+Eagle Talon Hatchback 1998 (score = 0.04111)
+<br />
+Aston Martin Virage Coupe 2012 (score = 0.03734)
+<br />
+Bugatti Veyron 16.4 Coupe 2009 (score = 0.03222)
+<br />
 
 
 
