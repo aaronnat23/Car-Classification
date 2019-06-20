@@ -64,6 +64,7 @@ python classify.py path/to/image
 # Results
 
 ![Screenshot](data/00020.jpg)
+<br />
 BMW X3 SUV 2012 (score = 0.60578)
 Bentley Continental Flying Spur Sedan 2007 (score = 0.02981)
 BMW X5 SUV 2007 (score = 0.02563)
@@ -74,3 +75,20 @@ Audi S6 Sedan 2011 (score = 0.01916)
 BMW ActiveHybrid 5 Sedan 2012 (score = 0.01839)
 Audi 100 Wagon 1994 (score = 0.01519)
 BMW M5 Sedan 2010 (score = 0.01504)
+
+
+![Screenshot](data/00020.jpg)
+<br />
+Hyundai Veloster Hatchback 2012 (score = 0.17449)
+Tesla Model S Sedan 2012 (score = 0.13896)
+Eagle Talon Hatchback 1998 (score = 0.07237)
+Infiniti G Coupe IPL 2012 (score = 0.05229)
+Porsche Panamera Sedan 2012 (score = 0.03987)
+Jaguar XK XKR 2012 (score = 0.03444)
+Nissan Juke Hatchback 2012 (score = 0.03395)
+Mitsubishi Lancer Sedan 2012 (score = 0.03289)
+Aston Martin Virage Coupe 2012 (score = 0.02511)
+BMW 3 Series Sedan 2012 (score = 0.02106)
+
+
+
