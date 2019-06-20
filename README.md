@@ -62,7 +62,8 @@ python classify.py path/to/image
 - The more complex model (ex. InceptionV3) the less accurate results are. This is understanable due to bias/variance problem.
 
 # Results
-![Alt text](data/00020.jpg?raw=true "Title")
+
+![Screenshot](data/00020.jpg)
 BMW X3 SUV 2012 (score = 0.60578)
 Bentley Continental Flying Spur Sedan 2007 (score = 0.02981)
 BMW X5 SUV 2007 (score = 0.02563)
